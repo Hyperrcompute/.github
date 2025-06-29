@@ -3,7 +3,7 @@
 > **Decentralized GPU & Compute Marketplace**  
 > Empowering developers with secure, ephemeral Docker environments through peer-to-peer networking
 
-[![Website](https://img.shields.io/badge/Website-hyperrcompute.com-blue?style=flat-square)](https://hyperrcompute.com)
+[![Website](https://img.shields.io/badge/Website-hyperrcompute.com-blue?style=flat-square)](http://hyperrcompute.com)
 [![npm](https://img.shields.io/npm/v/hyperrcompute?style=flat-square&logo=npm)](https://www.npmjs.com/package/hyperrcompute)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![GitHub Org's stars](https://img.shields.io/github/stars/hyperrcompute?style=social)](https://github.com/hyperrcompute)
@@ -34,16 +34,11 @@ npm install -g hyperrcompute@latest
 
 ### Start Providing Compute
 ```bash
-# Become a compute provider
-hyperrcompute <YOUR_PRIVATE_CONNECTION_STRING> --port 8080
-```
-
-### Launch a Compute Job
-```bash
-# Spin up an Ubuntu environment for 10 minutes
+# Spin up an Ubuntu environment for 1 hour and 10 minutes
 hyperrcompute \
   --image ubuntu:latest \
-  --time 600 \
+  --hours 1 \
+  --minutes 10 \
   --force \
   --live \
   --connector <PROVIDER_CONNECTION_STRING>
@@ -96,28 +91,7 @@ hyperrcompute \
 - **HyperDHT**: Distributed hash table for peer discovery
 - **Docker Engine**: Containerization and isolation
 - **TCP Tunneling**: Secure communication channels
-- **Resource Management**: CPU, memory, and time controls
-
----
-
-## 📊 Project Ecosystem
-
-### Core Repositories
-
-| Repository | Description | Status |
-|------------|-------------|--------|
-| **[hyperrcompute-core](https://github.com/hyperrcompute/hyperrcompute-core)** | Main CLI and networking engine | 🚀 Active |
-| **[hyperrcompute-ui](https://github.com/hyperrcompute/hyperrcompute-ui)** | Web dashboard and management interface | 🔨 Development |
-| **[hyperrcompute-docs](https://github.com/hyperrcompute/hyperrcompute-docs)** | Documentation and examples | 📚 Growing |
-| **[hyperrcompute-plugins](https://github.com/hyperrcompute/hyperrcompute-plugins)** | Community extensions and integrations | 🧩 Community |
-
-### Tools & Utilities
-
-| Repository | Description | Status |
-|------------|-------------|--------|
-| **[hc-monitor](https://github.com/hyperrcompute/hc-monitor)** | Network health and performance monitoring | ⚡ Beta |
-| **[hc-marketplace](https://github.com/hyperrcompute/hc-marketplace)** | Decentralized compute marketplace | 🏪 Planned |
-| **[hc-sdk](https://github.com/hyperrcompute/hc-sdk)** | SDKs for popular languages | 🛠️ Development |
+- **Resource Management**: GPU, CPU, memory, and time controls
 
 ---
 
@@ -135,8 +109,8 @@ hyperrcompute \
 
 ```bash
 # Clone the main repository
-git clone https://github.com/hyperrcompute/hyperrcompute-core.git
-cd hyperrcompute-core
+git clone https://github.com/hyperrcompute/hyperrcompute.git
+cd hyperrcompute
 
 # Install dependencies
 npm install
@@ -154,21 +128,6 @@ We're building an inclusive community where everyone can contribute. Please read
 
 ---
 
-## 📈 Roadmap
-
-### 🎯 Current Focus (Q2 2025)
-- [ ] Enhanced security protocols
-- [ ] GPU scheduling optimization
-- [ ] Multi-architecture support (ARM64, x86)
-- [ ] Web UI improvements
-
-### 🔮 Future Vision (2025-2026)
-- [ ] Tokenized compute marketplace
-- [ ] Advanced load balancing
-- [ ] Kubernetes integration
-- [ ] Mobile app for monitoring
-
----
 
 ## 🌟 Why Choose HyperrCompute?
 
@@ -202,7 +161,7 @@ All HyperrCompute projects are released under the **MIT License** - see individu
 
 **🚀 Join the Future of Distributed Computing**
 
-[Get Started](https://hyperrcompute.com/docs/quickstart) • [Join Community](https://discord.gg/hyperrcompute) • [Contribute](https://github.com/hyperrcompute/hyperrcompute-core/blob/main/CONTRIBUTING.md)
+[Get Started](https://docs.hyperrcompute.com) • [Join Community](https://discord.gg/hyperrcompute) • [Contribute](https://github.com/hyperrcompute/hyperrcompute/blob/main/CONTRIBUTING.md)
 
 *Built with ❤️ by the HyperrCompute community*
 
